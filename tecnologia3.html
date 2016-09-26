@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Internet Live Streaming | Tecnologia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+    <!-- Header -->
+        <div id="header">
+                   	
+            <!-- Logo -->
+            <h2><a href="index.html" id="logo">Internet Live Streaming<em></em></a></h2>
+            
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+						<li><a href="index.html">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li class="current"><a href="tecnologia.html">Tecnologia</a>
+                            <ul>
+                                <li><a href="tecnologia1.html">Arquitecturas</a></li>
+                                <li><a href="tecnologia2.html">Codecs</a></li>
+                                <li><a href="tecnologia3.html">Protocolos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="aplicacoes.html">Aplicações</a></li>
+                        <li><a href="modelonegocio.html">Modelo de Negócio</a></li>
+                        <li><a href="legaissociais.html">Aspectos Legais e Sociais</a></li>
+                        <li><a href="futuro.html">Futuro</a></li>
+                        <li><a href="portugal.html">Live Streaming em Portugal</a></li>
+                      	<li><a href="curriculo.html">Sobre nós</a></li>
+                    </ul>
+                </nav>
+    </div>
+        
+    <!-- Main -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row 200%">
+                    <div class="2u 10u(2)"></div>
+                    <div class="8u  12u(2) important(2)">
+                    
+                        <div id="content">
+
+                            <!-- Content -->
+                        
+<article>
+    <header>
+      <h2>Protocolos</h2>
+   </header>
+    
+    <h3>RTP, RTCP e RTSP</h3>
+    <p>&emsp;&emsp;O <i>Real-Time Transport Protocol</i> (RTP) é um protocolo de rede cujo objetivo consiste na entrega de áudio e vídeo através de redes IP. O RTP é usado em sistemas que envolvem <i>streaming de media</i>, como por exemplo a telefonia, aplicações de vídeo teleconferência e serviços de televisão.  O RTP é usado em conjunto com o <i>Real-Time Transport Control Protocol</i> (RTCP). Enquanto RTP entrega os fluxos de <i>media </i>(por exemplo, áudio e vídeo), RTCP é usado para controlar as estatísticas de transmissão e a qualidade de serviço (QoS)<a title="A. Durresi e R. Jain, “RTP, RTCP, and RTSP – Internet Protocols for Real-Time Multimedia Communication”, [Online] disponível:
+http://www.cse.wustl.edu/~jain/books/ftp/rtp.pdf"> [1]</a>. 
+</br>&emsp;&emsp;O <i>Real-Time Streaming Protocol</i> (RTSP) é um protocolo de controlo da transferência de dados em tempo real. O RTSP não entrega dados (embora a ligação RTSP consiga ser usada como túnel de tráfego RTP para facilidade de uso com firewalls e outros dispositivos de rede). O RTP e RTSP são muitas vezes utilizados em conjunto em muitos sistemas, embora qualquer um dos protocolos possa ser utilizado sem o outro<a title="Knowlegde Through Fun, “Relationship between RTP, RTCP and RTSP”, [Online] disponível:
+http://computerfun4u.blogspot.pt/2009/02/relationship-between-rtp-rtcp-and-rtsp.html"> [2]</a>.
+
+
+	<h3>Adaptive Bitrate Streaming</h3>
+	<p>&emsp;&emsp;<i>Adaptive Bitrate Streaming</i> é uma técnica utilizada no <i>live streaming</i> de multimédia nas redes de computadores<a title="Wikipedia, “Adaptive bitrate streaming”, [Online] disponível:
+https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming"> [3]</a>. Esta através da deteção da largura de banda e capacidade de CPU do utilizador que recebe o <i>streaming</i> em tempo real ajusta a qualidade (taxa binária) do fluxo de vídeo (Fig. 1). Enquanto anteriormente a maioria das tecnologias de streaming de vídeo utilizava protocolos de streaming como RTP com RTSP, as tecnologias de <i>streaming</i> adaptativo de hoje são baseados quase unicamente em HTTP e projetadas para funcionar de forma eficiente em grandes redes HTTP distribuídas, como a Internet.
+	</br>&emsp;&emsp;<i>Content Delivery Networks</i> (CDN) usam esta tecnologia de modo a fornecer aos utilizadores uma maior qualidade de vídeo, usando menos recursos.
+	</br>&emsp;&emsp;<i>Adaptive Bitrate Streaming</i> foi introduzida pela Move Networks e está a ser desenvolvida e utilizada pela Adobe Systems, Apple, Microsoft entre outras.
+    </p>   
+	<span class="image featured"><img src="images/tecnologia/bitrate.png" alt="" /></span>
+    <center><p>Figura 1 - Variação ao longo do tempo, com a largura de banda disponível, da qualidade (taxa binária) da transmissão<a title="Panopto, “Video Straining Your Network?”, [Online] disponível:
+http://panopto.com/blog/video-straining-your-network/"> [4]</a>.</p></center> 
+    	
+    <br/>
+    <center><p><a href="tecnologia.html">Voltar atrás</a></p></center> 
+    
+</article>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>			
+
+    <!-- Footer -->
+        <div id="footer">
+            <div class="copyright">
+                <ul class="menu">
+                    <li>All rights reserved &copy; 2015</li><li>IST-MEEC</li>
+                </ul>
+            </div>
+        </div>
+
+	</body>
+</html>

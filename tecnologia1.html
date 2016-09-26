@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Internet Live Streaming | Tecnologia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+    <!-- Header -->
+        <div id="header">
+                   	
+            <!-- Logo -->
+            <h2><a href="index.html" id="logo">Internet Live Streaming<em></em></a></h2>
+            
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+						<li><a href="index.html">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li class="current"><a href="tecnologia.html">Tecnologia</a>
+                            <ul>
+                                <li><a href="tecnologia1.html">Arquitecturas</a></li>
+                                <li><a href="tecnologia2.html">Codecs</a></li>
+                                <li><a href="tecnologia3.html">Protocolos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="aplicacoes.html">Aplicações</a></li>
+                        <li><a href="modelonegocio.html">Modelo de Negócio</a></li>
+                        <li><a href="legaissociais.html">Aspectos Legais e Sociais</a></li>
+                        <li><a href="futuro.html">Futuro</a></li>
+                        <li><a href="portugal.html">Live Streaming em Portugal</a></li>
+                      	<li><a href="curriculo.html">Sobre nós</a></li>
+                    </ul>
+                </nav>
+    </div>
+        
+    <!-- Main -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row 200%">
+                    <div class="2u 10u(2)"></div>
+                    <div class="8u  12u(2) important(2)">
+                    
+                        <div id="content">
+
+                            <!-- Content -->
+                        
+<article>
+    <header>
+      <h2>Arquiteturas</h2>
+    </header>
+    <h3>Content Delivery Network</h3>                    
+    <p>&emsp;&emsp;<i>Content Delivery Network</i> (CDN), representada na Fig. 1, é a arquitetura que mais se utiliza no que toca à distribuição de conteúdos na Internet. O CDN consiste num sistema distribuído de servidores <i>proxy</i> cujo objetivo é levar o conteúdo ao utilizador final com disponibilidade e desempenho<a title="Streamingmedia, “What is a Content Delivery Network (CDN)?” [Online] disponível:http://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-is-a-Content-Delivery-Network-%28CDN%29-74458.aspx"> [1]</a>. As arquiteturas CDN podem ser divididas em três categorias: as que entregam conteúdos gerais de vídeo, as que entregam vídeos pré-gravados e as que transmitem vídeo ao vivo.
+</br>&emsp;&emsp;Na transmissão de vídeo ao vivo, o conteúdo não pode ser guardado em <i>cache</i> por isso é necessária uma largura de banda elevada de maneira a que o conteúdo chegue nas melhores condições ao utilizador final, o que traduz um aumento de custo do serviço.</p>
+    
+    <center><span class="image featured"><img src="images/tecnologia/cdn.png" alt="" style="width: 70%; height: 70%"/></span></center>
+	<center><p>Figura 1 - Arquitetura CDN<a title="Uliza, “ULIZA Content Cloud”, [Online] disponível: http://uliza.jp/solution/video_platform/cdn.html"> [2]</a>.</p></center> 
+ 
+ 	<h3>Peer-to-Peer</h3>  
+ 	<p>&emsp;&emsp;<i>Peer-to-Peer</i> (P2P) é uma arquitetura de redes descentralizada, dado que cada um dos nós da rede tem as mesmas capacidades e pode funcionar como cliente ou como servidor sem necessitar de um servidor central<a title="TechTarget, “peer-to-peer (P2P) definition”, [Online] disponível:http://searchnetworking.techtarget.com/definition/peer-to-peer"> [3]</a>, como representado na Fig.2. O facto das redes P2P serem heterogéneas consiste numa desvantagem, dado que computadores utilizados por diferentes utilizadores não têm garantias de ficar ligados ou de não ocorrerem falhas, isto leva a uma imprevisibilidade nas redes P2P. Uma das aplicações que mais utiliza esta arquitetura é o Skype.
+	
+	<center><span class="image featured"><img src="images/tecnologia/p2p.png" alt="" style="width: 50%; height: 50%"/></span></center> 
+	<center><p>Figura 2 - Arquitetura P2P<a title="Ted's e-Portfolio, “Experimenting with Encrypted, P2P Mobile Communication”, [Online] disponível: https://sites.psu.edu/tedp/2014/03/02/the-road-to-encrypted-p2p-mobile-communication/"> [4]</a>.</p></center> 
+	
+	<h3>Híbridos (CDN-P2P)</h3>
+	<p>&emsp;&emsp;Ambas as arquiteturas mencionadas anteriormente têm as suas vantagens e desvantagens. A arquitetura híbrida CDN-P2P, representada na Fig. 4, utiliza as duas de maneira a tirar partido das vantagens de cada uma delas. Por um lado, o controlo de qualidade e o nível de confiança duma CDN e, por outro, a escalabilidade inerente a um sistema P2P <a title="Hao Yin; Xuening Liu; Tongyu Zhan;, “Design and deployment of a hybrid CDN-P2P system for live video streaming: experiences with LiveSky”, [Online] disponível: http://users.ece.cmu.edu/~vsekar/papers/mm12283-yin.pdf"> [5]</a>. Esta arquitetura híbrida é indispensável para obter a melhor solução para streaming de conteúdos em particular para serviços de streaming ao vivo.  
+
+	
+	<center><span class="image featured"><img src="images/tecnologia/hybrid.png" alt="" style="width: 70%; height: 70%"/></span></center> 
+	<center><p>Figura 3 - Arquitetura híbrida CDN-P2P <a title="Leandro Melo de Sales, “Global Media Transmission Protocol (GMTP)”, [Online] disponível: http://gmtp-protocol.org"> [6]</a>.</p></center> 
+
+    <br/>
+    <center><p><a href="tecnologia.html">Voltar atrás</a></p></center> 
+
+
+</article>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>			
+
+    <!-- Footer -->
+        <div id="footer">
+            <div class="copyright">
+                <ul class="menu">
+                    <li>All rights reserved &copy; 2015</li><li>IST-MEEC</li>
+                </ul>
+            </div>
+        </div>
+
+	</body>
+</html>
